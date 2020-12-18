@@ -4,7 +4,7 @@ Under denna kurs har du lärt dig objektorienterad programmering med C++. I dett
 
 En demoversion av spelet kan du hitta här: https://playsnake.org/ (Skapad av Neave Interactive Ltd.)
 
-För detta projekt får du två val när det gäller att *rita* spelet. Det första alternativet är med biblioteket `ncurses` som erbjuder ett smidigt sätt att rensa terminalen och rita tecken på önskad position. Det andra alternativet är `SFML` (super fast multimedia library) som är ett mycket lättanvänt bibliotek för 2D-spel i C++.
+För detta projekt får du två val när det gäller att *rita* spelet. Det första alternativet är med biblioteket `ncurses` som erbjuder ett smidigt sätt att rensa terminalen och rita tecken på önskad position. Det andra alternativet är `SFML` (super fast multimedia library) som är ett mycket lättanvänt bibliotek för 2D-spel i C++. Du ska välja en av dessa för ditt projekt.
 
 För att alla ska känna att de har en bra grund att börja från ger vi ut en demo-projekt för vardera bibliotek. Dessa demos hjälper dig med:
 
@@ -12,9 +12,9 @@ För att alla ska känna att de har en bra grund att börja från ger vi ut en d
 - inmatning utan att *pausa* spelet
 - slumpgenererade tal
 
-Det är inte ett krav att använda dessa demos, men kan hjälpa dig komma igång med ditt projekt. Vi har skapat och testat dessa i både WSL och MacOS. Just installation kan vara lite knepigt, och vill du försöka dig på detta själv ger vi dig de länkar du behöver. Vill du ha stöd hjälper vi dig också: det är bara att köra `make install` och följa anvisningarna i önskat demo! :)
+Det är inte ett krav att använda dessa demos, men de kan hjälpa dig komma igång med ditt projekt. Vi har skapat och testat dessa i både WSL och MacOS. Vill du försöka dig på att installera detta själv ger vi dig de länkar du behöver. Vill du ha stöd hjälper vi dig också: det är bara att köra `make install` och följa anvisningar i önskat demo! :)
 
-Till skillnad från tidigare examinationsmoment i denna kurs så kommer det inte existera automatiska tester för detta projekt. Istället kommer du ges ett antal kriterier att som du behöver uppfylla baserat på kursmålen, och utöver dessa är du fri att skapa ett spel på den nivån du känner att du är kapabel till. Det projekt du skapar kommer du sedan redovisa inför lärare och en mindre grupp studenter, i vilket du även får se andras arbeten också.
+Till skillnad från tidigare examinationsmoment i denna kurs så kommer det inte existera automatiska tester för detta projekt. Istället kommer du ges ett antal kriterier som du behöver uppfylla baserat på kursmålen, och utöver dessa är du fri att skapa ett spel på den nivån du känner att du är kapabel till. Det projekt du skapar kommer du sedan redovisa inför lärare och en mindre grupp studenter, i vilket du även får se andras arbeten också.
 
 Detta projekt är även betygsättande för denna kurs med betygsskalan A-F. För betyget E (godkänt) ska du skapa ett fungerande spel baserat på kriterier du finner lite längre ner på denna sida. När kriterierna för betyget E är implementerat finns det fyra utmaningar som är värda en poäng styck om de implementeras. En poäng kommer öka ditt betyg med en nivå, givet att kriterierna för betyget E uppfylls. Ordningen på dessa har ingen betydelse, du är fri att välja bland dessa.
 
@@ -44,7 +44,7 @@ Detta projekt är även betygsättande för denna kurs med betygsskalan A-F. Fö
 - Ormen ska uppdateras med jämna intervall, oavsett om inmatning sker eller ej från användaren.
 - Ormens riktning ska gå att styra med hjälp av inmatning (WASD eller/och piltangenter).
 - Mat ska skapas på kartan med jämna mellanrum.
-- Du ska skapa ett klassdiagram som inkluderar alla klasses du implementerar som tydligt visar deras innehåll (variabler och funktioner) samt relationer mellan dem.
+- Du ska skapa ett klassdiagram som inkluderar alla klasser du implementerar som tydligt visar deras innehåll (variabler och funktioner) samt relationer mellan dem.
 - Angiven kodstil följs
 - Angivna spelregler ska följas
 
@@ -93,7 +93,7 @@ För att detta extraval ska godkännas måste åtminstone tre av följande alter
 
 **Odödlighet**
 
-Ormen ska under en begränsad tid tillåtas att åka igenom sin egen svans utan att spelet förloras. Det ska även vara möjligt att *teleporteras* från en kant av kartan till motstående kant. Exempelvis kan ormen åka rakt till höger, och de kroppsdelar som åker *utanför* kartans högra sida kommer fortsätta från vänster sida av kartan istället.
+Ormen ska under en begränsad tid tillåtas att åka igenom sin egen svans utan att spelet förloras. Det ska även vara möjligt att passera en kant av kartan och *teleporteras* bit-för-bit till motsvarande kant under denna period. Exempelvis kan ormen åka rakt till höger, och för varje kroppsdel som åker *utanför* kartans högra sida kommer fortsätta från vänster sida av kartan istället.
 
 Om tiden för effekten tar slut när ormen befinner sig på två sidor av kartan kommer ormens kroppsdelar fortsätta *teleporteras*, men ormens huvud tillåts ej åka utanför kartan igen.
 
