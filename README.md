@@ -95,6 +95,8 @@ För att detta extraval ska godkännas måste åtminstone tre av följande alter
 
 Ormen ska under en begränsad tid tillåtas att åka igenom sin egen svans utan att spelet förloras. Det ska även vara möjligt att *teleporteras* från en kant av kartan till motstående kant. Exempelvis kan ormen åka rakt till höger, och de kroppsdelar som åker *utanför* kartans högra sida kommer fortsätta från vänster sida av kartan istället.
 
+Om tiden för effekten tar slut när ormen befinner sig på två sidor av kartan kommer ormens kroppsdelar fortsätta *teleporteras*, men ormens huvud tillåts ej åka utanför kartan igen.
+
 **Ökad hastighet**
 
 Ormen ska under en begränsad tid flyttas snabbare genom att korta ner på tiden mellan varje uppdatering. Detta ska göra spelet svårare, då det kräver att användaren måste reagera snabbare. Den ökade hastigheten ska vara tydlig i relation till den ordinarie hastiheten.
@@ -105,7 +107,7 @@ När denna effekt aktiveras kommer ormen, sett från spelarens ny, att börja å
 
 **Halvera ormens längd**
 
-När denna effekt aktiveras kommer ormens hälften av ormens svans att försvinna utan att poäng dras bort för det nuvarande spelet. 
+När denna effekt aktiveras kommer hälften av ormens svans att försvinna utan att poäng dras bort för det nuvarande spelet. 
 
 **Inverterade kontroller**
 
